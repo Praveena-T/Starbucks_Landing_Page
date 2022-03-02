@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starbucket</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+      <a href="" class="logo"><img src="./asserts/images/logo.png"></a>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">What's New</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It is not just a coffee <br> It's <span>Starbuckets</span> </h2>
+        <p>Lorem ipsum dolor sit amet, et copiosae volutpat cotidieque mei, vim ut purto hendrerit. An rebum intellegebat sea. Sit diam molestie tacimates ei, quidam nominati mandamus ex vim. </p>
+        <a href="" style="color: white">Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="asserts/images/img1.png" class="starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="asserts/images/thumb1.png" onclick="imagSlider('asserts/images/img1.png'); changeCircleColor('#017143')"></li>
+      <li><img src="asserts/images/thumb2.png" onclick="imagSlider('asserts/images/img2.png'); changeCircleColor('#eb7495')"></li>
+      <li><img src="asserts/images/thumb3.png" onclick="imagSlider('asserts/images/img3.png'); changeCircleColor('#d752b1')"></li>
+    </ul>  
+    <ul class="sci">
+      <li><a href=""> <img src="asserts/images/facebook.png"></a></li>
+      <li><a href=""> <img src="asserts/images/twitter.png"></a></li>
+      <li><a href=""> <img src="asserts/images/instagram.png"></a></li>
+    </ul>  
+  </section>
+
+<script type="text/javascript">
+  function imagSlider(anything) {
+    document.querySelector('.starbucks').src = anything;
+  }
+
+  function changeCircleColor(color) {
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+  }
+</script>
+
+</body>
+</html> 
